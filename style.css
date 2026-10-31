@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 16px;
+  color: #f8f1df;
+  background: radial-gradient(circle at top, #342714 0, #17130d 42%, #090909 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sparkles {
+  color: #d9b45b;
+  letter-spacing: 12px;
+  font-size: 25px;
+  margin-bottom: 18px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+.birthday-card {
+  width: min(100%, 720px);
+  padding: 38px 28px;
+  text-align: center;
+  border: 1px solid #b99143;
+  border-radius: 22px;
+  background: rgba(15, 14, 12, .88);
+  box-shadow: 0 0 35px rgba(205, 164, 75, .16);
+}
+.eyebrow {
+  color: #d7b45e;
+  letter-spacing: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+h1 {
+  margin: 12px 0;
+  font: 700 clamp(2rem, 7vw, 3.6rem)/1.18 'Playfair Display', serif;
+}
+h1 span { color: #e6c36e; }
+.intro { color: #d7c9a8; }
+.photo-frame {
+  width: min(100%, 390px);
+  margin: 28px auto;
+  padding: 9px;
+  border: 2px solid #d2aa54;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f2d88b, #8c6425, #f2d88b);
+}
+.photo-frame img {
+  display: block;
+  width: 100%;
+  max-height: 510px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 11px;
+}
+.message {
+  max-width: 590px;
+  margin: 25px auto;
+  color: #eee5d1;
+  line-height: 1.9;
+  font-size: 14px;
+}
+button {
+  border: 0;
+  border-radius: 30px;
+  padding: 13px 22px;
+  background: linear-gradient(135deg, #f2d88b, #bd8c35);
+  color: #17110a;
+  font: 600 14px 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+button:hover { transform: translateY(-2px); box-shadow: 0 7px 20px #bd8c3555; }
+.surprise-message { color: #f2d88b; margin-top: 20px; line-height: 1.7; }
+.music-area { margin-top: 28px; }
+.music-button { background: transparent; color: #e6c36e; border: 1px solid #bd8c35; }
+.music-note { color: #bdb29c; font-size: 11px; margin-top: 10px; }
+.signature { margin-top: 30px; color: #e6c36e; font-family: 'Playfair Display', serif; font-size: 19px; }
+footer { color: #a99a7c; font-size: 11px; padding: 22px 0 5px; }
+@keyframes glow { from { opacity: .55; } to { opacity: 1; text-shadow: 0 0 14px #e6c36e; } }
+@media (max-width: 480px) {
+  .birthday-card { padding: 30px 18px; }
+  .message { font-size: 13px; }
+}
